@@ -33,7 +33,7 @@
 <body></body>
 
 <script>
-  const num_trials = 300;
+  const num_trials = 10;
   const feedbackTrialsCount = 5;
   const jsPsych = initJsPsych();
   const lower_bound = 200;
@@ -73,8 +73,8 @@
 
   function make_ready_set_go_trial(interval_ms, trialIndex) {
   const set_lower_bound = 500;
-  const set_upper_bound = 1500;
-  const N = 3;  // Number of discrete steps you want
+  const set_upper_bound = 500;
+  const N = 5;  // Number of discrete steps you want
   const setSteps = Array.from({ length: N }, (_, i) =>
   Math.round(set_lower_bound + i * (set_upper_bound - set_lower_bound) / (N - 1))
 );
@@ -95,54 +95,29 @@
       trial_duration: interval_ms,
       data: { phase: "isi" },
     },
-    // First SET circle (on for 500ms)
-{
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<div class="circle set"></div>',
-  choices: "NO_KEYS",
-  trial_duration: 500,
-  data: {
-    phase: "set_on_1"
-  }
-},
-// Delay (setDuration) — blank screen
-{
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '',
-  choices: "NO_KEYS",
-  trial_duration: setDuration,
-  data: {
-    phase: "set_gap",
-    set_duration: setDuration  // store here
-  }
-},
-// Second SET circle (on for 500ms)
-{
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<div class="circle set"></div>',
-  choices: "NO_KEYS",
-  trial_duration: 500,
-  data: {
-    phase: "set_on_2"
-  }
-},
-// Go waiting period — this begins after 2nd offset
-{
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '',
-  choices: [' '],
-  data: {
-    phase: "go",
-    target_interval: interval_ms,
-    set_duration: setDuration  // also record here
-  },
-  on_finish: function(data) {
-    data.reproduced_interval = data.rt;
-    data.reproduction_error = data.rt - data.target_interval;
-  },
-},
-
-    
+    {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '<div class="circle set"></div>',
+      choices: "NO_KEYS",
+      trial_duration: setDuration,
+      data: {
+        phase: "set",
+        set_duration: setDuration
+      },
+    },
+    {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: '',
+      choices: [' '],
+      data: {
+        phase: "go",
+        target_interval: interval_ms,
+      },
+      on_finish: function(data) {
+        data.reproduced_interval = data.rt;
+        data.reproduction_error = data.rt - data.target_interval;
+      },
+    },
   ];
   // Always show red circle
 trialTimeline.push({
@@ -164,17 +139,13 @@ if (trialIndex < feedbackTrialsCount) {
         data: { phase: "feedback_circle" },
       },
       {
-  
   type: jsPsychHtmlKeyboardResponse,
   stimulus: function() {
     const lastGo = jsPsych.data.get().filter({ phase: 'go' }).last(1).values()[0];
-    const lastSetGap = jsPsych.data.get().filter({ phase: 'set_gap' }).last(1).values()[0];
-    
+    const setDur = jsPsych.data.get().filter({ phase: 'set' }).last(1).values()[0].set_duration;
     const target = lastGo.target_interval;
     const reproduced = lastGo.reproduced_interval;
     const error = lastGo.reproduction_error;
-    const setDur = lastSetGap.set_duration;
-
     return `
       <p><strong>Set duration:</strong> ${setDur} ms</p>
       <p><strong>Interval you saw:</strong> ${target} ms</p>
@@ -184,8 +155,7 @@ if (trialIndex < feedbackTrialsCount) {
     `;
   },
   data: { phase: "feedback_text" },
-}
- ,
+},
 
       {
         type: jsPsychHtmlKeyboardResponse,
@@ -209,7 +179,7 @@ if (trialIndex < feedbackTrialsCount) {
 }
 
 
-  const n = 5;
+  const n = 10;
   
   const intervals = Array.from({ length: n }, (_, i) =>
     Math.round((lower_bound + (i * (upper_bound - lower_bound)) / (n - 1)) / 10) * 10
@@ -235,8 +205,7 @@ if (trialIndex < feedbackTrialsCount) {
     choices: "ALL_KEYS",
     on_load: function() {
       const go_trials = jsPsych.data.get().filter({ phase: "go" }).values();
-const set_durations = jsPsych.data.get().filter({ phase: "set_gap" }).values().map(t => t.set_duration);
-
+const set_durations = jsPsych.data.get().filter({ phase: "set" }).values().map(t => t.set_duration);
 
 // Group trials by set duration
 const uniqueDurations = [...new Set(set_durations)].sort((a, b) => a - b);
@@ -257,7 +226,6 @@ const traces = uniqueDurations.map(dur => {
     }
   };
 });
-
 
 const layout = {
   title: 'Reported vs Actual Interval (Colored by Set Duration)',
