@@ -165,11 +165,11 @@
   const trials_per_block = Math.floor(num_trials / 3);
   const blocks = [
     // { lower: 494, upper: 847 },
-    { lower: 671, upper: 1023 },
-    { lower: 671, upper: 1023 },
-    { lower: 671, upper: 1023 },
+    { lower: 847, upper: 1200 },
+    { lower: 847, upper: 1200 },
+    { lower: 847, upper: 1200 },
 
-    // { lower: 847, upper: 1200 }
+    // { lower: 671, upper: 1023 }
   ];
   const randomizedBlocks = jsPsych.randomization.shuffle(blocks);
   let trialIndex = 0;
