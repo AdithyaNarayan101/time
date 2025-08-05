@@ -1,0 +1,1537 @@
+"rt","response","trial_type","trial_index","time_elapsed","internal_node_id","subject_ID","stimulus","phase","set_duration","target_interval","reproduced_interval","reproduction_error"
+"868","{""subject_id"":""adi ""}","survey-text","0","872","0.0-0.0","","","","","","",""
+"359"," ","html-keyboard-response","1","1235","0.0-1.0","","
+      <p>Ready-Set-Go Task:</p>
+      <ul style=""text-align:left; max-width:600px; margin:auto;"">
+        <li>First, a <strong>red circle (""Ready"")</strong> appears</li>
+        <li>Then, an <strong>orange circle (""Set"")</strong> appears after a delay</li>
+        <li>You must <strong>press SPACE</strong> after an equal delay</li>
+        <li>Then, a <strong>green circle (""Go"")</strong> appears</li>
+        <li>You'll get feedback for the first 5 trials.</li>
+      </ul>
+      <p>Press any key to begin.</p>
+    ","","","","",""
+"null","null","html-keyboard-response","2","1739","0.0-2.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","3","2293","0.0-3.0","","","isi","","","",""
+"null","null","html-keyboard-response","4","2798","0.0-4.0","","<div class=""circle set""></div>","set","500","","",""
+"443"," ","html-keyboard-response","5","3243","0.0-5.0","","","go","","550","443","-107"
+"null","null","html-keyboard-response","6","3747","0.0-6.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","7","4253","0.0-7.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 443 ms</p>
+        <p><strong>Error:</strong> -107 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 39.300000000000004%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","8","5257","0.0-8.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","9","5761","0.0-9.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","10","6316","0.0-10.0","","","isi","","","",""
+"null","null","html-keyboard-response","11","6820","0.0-11.0","","<div class=""circle set""></div>","set","500","","",""
+"420"," ","html-keyboard-response","12","7242","0.0-12.0","","","go","","550","420","-130"
+"null","null","html-keyboard-response","13","7746","0.0-13.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","14","8251","0.0-14.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 420 ms</p>
+        <p><strong>Error:</strong> -130 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 37%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","15","9255","0.0-15.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","16","9759","0.0-16.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","17","10313","0.0-17.0","","","isi","","","",""
+"null","null","html-keyboard-response","18","10818","0.0-18.0","","<div class=""circle set""></div>","set","500","","",""
+"580"," ","html-keyboard-response","19","11400","0.0-19.0","","","go","","550","580","30"
+"null","null","html-keyboard-response","20","11904","0.0-20.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","21","12406","0.0-21.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 580 ms</p>
+        <p><strong>Error:</strong> +30 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 53%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","22","13409","0.0-22.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","23","13912","0.0-23.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","24","14765","0.0-24.0","","","isi","","","",""
+"null","null","html-keyboard-response","25","15268","0.0-25.0","","<div class=""circle set""></div>","set","500","","",""
+"825"," ","html-keyboard-response","26","16094","0.0-26.0","","","go","","850","825","-25"
+"null","null","html-keyboard-response","27","16595","0.0-27.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","28","17100","0.0-28.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 825 ms</p>
+        <p><strong>Error:</strong> -25 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 47.5%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","29","18102","0.0-29.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","30","18605","0.0-30.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","31","19397","0.0-31.0","","","isi","","","",""
+"null","null","html-keyboard-response","32","19900","0.0-32.0","","<div class=""circle set""></div>","set","500","","",""
+"814"," ","html-keyboard-response","33","20715","0.0-33.0","","","go","","790","814","24"
+"null","null","html-keyboard-response","34","21217","0.0-34.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","35","21720","0.0-35.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 814 ms</p>
+        <p><strong>Error:</strong> +24 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 52.400000000000006%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","36","22722","0.0-36.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","37","23225","0.0-37.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","38","23958","0.0-38.0","","","isi","","","",""
+"null","null","html-keyboard-response","39","24461","0.0-39.0","","<div class=""circle set""></div>","set","500","","",""
+"660"," ","html-keyboard-response","40","25122","0.0-40.0","","","go","","730","660","-70"
+"null","null","html-keyboard-response","41","25624","0.0-41.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","42","26128","0.0-42.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 730 ms</p>
+        <p><strong>Interval you reported:</strong> 660 ms</p>
+        <p><strong>Error:</strong> -70 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","43","27131","0.0-43.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","44","27634","0.0-44.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","45","28307","0.0-45.0","","","isi","","","",""
+"null","null","html-keyboard-response","46","28808","0.0-46.0","","<div class=""circle set""></div>","set","500","","",""
+"927"," ","html-keyboard-response","47","29736","0.0-47.0","","","go","","670","927","257"
+"null","null","html-keyboard-response","48","30238","0.0-48.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","49","30741","0.0-49.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 670 ms</p>
+        <p><strong>Interval you reported:</strong> 927 ms</p>
+        <p><strong>Error:</strong> +257 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 75.7%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","50","31743","0.0-50.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","51","32246","0.0-51.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","52","33039","0.0-52.0","","","isi","","","",""
+"null","null","html-keyboard-response","53","33541","0.0-53.0","","<div class=""circle set""></div>","set","500","","",""
+"746"," ","html-keyboard-response","54","34289","0.0-54.0","","","go","","790","746","-44"
+"null","null","html-keyboard-response","55","34791","0.0-55.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","56","35294","0.0-56.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 746 ms</p>
+        <p><strong>Error:</strong> -44 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 45.6%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","57","36297","0.0-57.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","58","36800","0.0-58.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","59","37533","0.0-59.0","","","isi","","","",""
+"null","null","html-keyboard-response","60","38035","0.0-60.0","","<div class=""circle set""></div>","set","500","","",""
+"633"," ","html-keyboard-response","61","38669","0.0-61.0","","","go","","730","633","-97"
+"null","null","html-keyboard-response","62","39171","0.0-62.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","63","39674","0.0-63.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 730 ms</p>
+        <p><strong>Interval you reported:</strong> 633 ms</p>
+        <p><strong>Error:</strong> -97 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 40.300000000000004%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","64","40676","0.0-64.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","65","41179","0.0-65.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","66","41972","0.0-66.0","","","isi","","","",""
+"null","null","html-keyboard-response","67","42475","0.0-67.0","","<div class=""circle set""></div>","set","500","","",""
+"941"," ","html-keyboard-response","68","43417","0.0-68.0","","","go","","790","941","151"
+"null","null","html-keyboard-response","69","43919","0.0-69.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","70","44422","0.0-70.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 941 ms</p>
+        <p><strong>Error:</strong> +151 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 65.10000000000001%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","71","45425","0.0-71.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","72","45928","0.0-72.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","73","46481","0.0-73.0","","","isi","","","",""
+"null","null","html-keyboard-response","74","46983","0.0-74.0","","<div class=""circle set""></div>","set","500","","",""
+"478"," ","html-keyboard-response","75","47462","0.0-75.0","","","go","","550","478","-72"
+"null","null","html-keyboard-response","76","47964","0.0-76.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","77","48467","0.0-77.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 478 ms</p>
+        <p><strong>Error:</strong> -72 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 42.8%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","78","49470","0.0-78.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","79","49973","0.0-79.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","80","50586","0.0-80.0","","","isi","","","",""
+"null","null","html-keyboard-response","81","51089","0.0-81.0","","<div class=""circle set""></div>","set","500","","",""
+"600"," ","html-keyboard-response","82","51690","0.0-82.0","","","go","","610","600","-10"
+"null","null","html-keyboard-response","83","52193","0.0-83.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","84","52696","0.0-84.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 600 ms</p>
+        <p><strong>Error:</strong> -10 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 49%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","85","53699","0.0-85.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","86","54202","0.0-86.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","87","54695","0.0-87.0","","","isi","","","",""
+"null","null","html-keyboard-response","88","55198","0.0-88.0","","<div class=""circle set""></div>","set","500","","",""
+"510"," ","html-keyboard-response","89","55709","0.0-89.0","","","go","","490","510","20"
+"null","null","html-keyboard-response","90","56211","0.0-90.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","91","56713","0.0-91.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 490 ms</p>
+        <p><strong>Interval you reported:</strong> 510 ms</p>
+        <p><strong>Error:</strong> +20 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 52%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","92","57716","0.0-92.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","93","58219","0.0-93.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","94","58832","0.0-94.0","","","isi","","","",""
+"null","null","html-keyboard-response","95","59335","0.0-95.0","","<div class=""circle set""></div>","set","500","","",""
+"610"," ","html-keyboard-response","96","59946","0.0-96.0","","","go","","610","610","0"
+"null","null","html-keyboard-response","97","60448","0.0-97.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","98","60951","0.0-98.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 610 ms</p>
+        <p><strong>Error:</strong> 0 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 50%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","99","61954","0.0-99.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","100","62458","0.0-100.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","101","63250","0.0-101.0","","","isi","","","",""
+"null","null","html-keyboard-response","102","63753","0.0-102.0","","<div class=""circle set""></div>","set","500","","",""
+"700"," ","html-keyboard-response","103","64454","0.0-103.0","","","go","","790","700","-90"
+"null","null","html-keyboard-response","104","64957","0.0-104.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","105","65460","0.0-105.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 700 ms</p>
+        <p><strong>Error:</strong> -90 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 41%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","106","66464","0.0-106.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","107","66967","0.0-107.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","108","67759","0.0-108.0","","","isi","","","",""
+"null","null","html-keyboard-response","109","68261","0.0-109.0","","<div class=""circle set""></div>","set","500","","",""
+"556"," ","html-keyboard-response","110","68817","0.0-110.0","","","go","","790","556","-234"
+"null","null","html-keyboard-response","111","69319","0.0-111.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","112","69822","0.0-112.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 556 ms</p>
+        <p><strong>Error:</strong> -234 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 26.6%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","113","70825","0.0-113.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","114","71327","0.0-114.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","115","71940","0.0-115.0","","","isi","","","",""
+"null","null","html-keyboard-response","116","72443","0.0-116.0","","<div class=""circle set""></div>","set","500","","",""
+"449"," ","html-keyboard-response","117","72894","0.0-117.0","","","go","","610","449","-161"
+"null","null","html-keyboard-response","118","73395","0.0-118.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","119","73898","0.0-119.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 449 ms</p>
+        <p><strong>Error:</strong> -161 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 33.900000000000006%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","120","74901","0.0-120.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","121","75404","0.0-121.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","122","76017","0.0-122.0","","","isi","","","",""
+"null","null","html-keyboard-response","123","76520","0.0-123.0","","<div class=""circle set""></div>","set","500","","",""
+"467"," ","html-keyboard-response","124","76988","0.0-124.0","","","go","","610","467","-143"
+"null","null","html-keyboard-response","125","77490","0.0-125.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","126","77993","0.0-126.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 467 ms</p>
+        <p><strong>Error:</strong> -143 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 35.699999999999996%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","127","78995","0.0-127.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","128","79498","0.0-128.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","129","80171","0.0-129.0","","","isi","","","",""
+"null","null","html-keyboard-response","130","80674","0.0-130.0","","<div class=""circle set""></div>","set","500","","",""
+"686"," ","html-keyboard-response","131","81361","0.0-131.0","","","go","","670","686","16"
+"null","null","html-keyboard-response","132","81863","0.0-132.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","133","82365","0.0-133.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 670 ms</p>
+        <p><strong>Interval you reported:</strong> 686 ms</p>
+        <p><strong>Error:</strong> +16 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 51.6%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","134","83367","0.0-134.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","135","83870","0.0-135.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","136","84423","0.0-136.0","","","isi","","","",""
+"null","null","html-keyboard-response","137","84925","0.0-137.0","","<div class=""circle set""></div>","set","500","","",""
+"594"," ","html-keyboard-response","138","85520","0.0-138.0","","","go","","550","594","44"
+"null","null","html-keyboard-response","139","86022","0.0-139.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","140","86524","0.0-140.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 594 ms</p>
+        <p><strong>Error:</strong> +44 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 54.400000000000006%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","141","87527","0.0-141.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","142","88029","0.0-142.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","143","88583","0.0-143.0","","","isi","","","",""
+"null","null","html-keyboard-response","144","89085","0.0-144.0","","<div class=""circle set""></div>","set","500","","",""
+"591"," ","html-keyboard-response","145","89678","0.0-145.0","","","go","","550","591","41"
+"null","null","html-keyboard-response","146","90179","0.0-146.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","147","90683","0.0-147.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 591 ms</p>
+        <p><strong>Error:</strong> +41 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 54.1%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","148","91686","0.0-148.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","149","92189","0.0-149.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","150","92801","0.0-150.0","","","isi","","","",""
+"null","null","html-keyboard-response","151","93304","0.0-151.0","","<div class=""circle set""></div>","set","500","","",""
+"643"," ","html-keyboard-response","152","93948","0.0-152.0","","","go","","610","643","33"
+"null","null","html-keyboard-response","153","94450","0.0-153.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","154","94953","0.0-154.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 643 ms</p>
+        <p><strong>Error:</strong> +33 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 53.300000000000004%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","155","95956","0.0-155.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","156","96459","0.0-156.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","157","96952","0.0-157.0","","","isi","","","",""
+"null","null","html-keyboard-response","158","97455","0.0-158.0","","<div class=""circle set""></div>","set","500","","",""
+"580"," ","html-keyboard-response","159","98036","0.0-159.0","","","go","","490","580","90"
+"null","null","html-keyboard-response","160","98538","0.0-160.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","161","99041","0.0-161.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 490 ms</p>
+        <p><strong>Interval you reported:</strong> 580 ms</p>
+        <p><strong>Error:</strong> +90 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 59%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","162","100044","0.0-162.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","163","100547","0.0-163.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","164","101099","0.0-164.0","","","isi","","","",""
+"null","null","html-keyboard-response","165","101603","0.0-165.0","","<div class=""circle set""></div>","set","500","","",""
+"515"," ","html-keyboard-response","166","102119","0.0-166.0","","","go","","550","515","-35"
+"null","null","html-keyboard-response","167","102621","0.0-167.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","168","103124","0.0-168.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 515 ms</p>
+        <p><strong>Error:</strong> -35 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 46.5%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","169","104127","0.0-169.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","170","104631","0.0-170.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","171","105483","0.0-171.0","","","isi","","","",""
+"null","null","html-keyboard-response","172","105986","0.0-172.0","","<div class=""circle set""></div>","set","500","","",""
+"879"," ","html-keyboard-response","173","106866","0.0-173.0","","","go","","850","879","29"
+"null","null","html-keyboard-response","174","107368","0.0-174.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","175","107871","0.0-175.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 879 ms</p>
+        <p><strong>Error:</strong> +29 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 52.900000000000006%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","176","108874","0.0-176.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","177","109376","0.0-177.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","178","109990","0.0-178.0","","","isi","","","",""
+"null","null","html-keyboard-response","179","110492","0.0-179.0","","<div class=""circle set""></div>","set","500","","",""
+"578"," ","html-keyboard-response","180","111071","0.0-180.0","","","go","","610","578","-32"
+"null","null","html-keyboard-response","181","111573","0.0-181.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","182","112076","0.0-182.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 578 ms</p>
+        <p><strong>Error:</strong> -32 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 46.800000000000004%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","183","113079","0.0-183.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","184","113582","0.0-184.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","185","114074","0.0-185.0","","","isi","","","",""
+"null","null","html-keyboard-response","186","114577","0.0-186.0","","<div class=""circle set""></div>","set","500","","",""
+"424"," ","html-keyboard-response","187","115002","0.0-187.0","","","go","","490","424","-66"
+"null","null","html-keyboard-response","188","115505","0.0-188.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","189","116008","0.0-189.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 490 ms</p>
+        <p><strong>Interval you reported:</strong> 424 ms</p>
+        <p><strong>Error:</strong> -66 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43.4%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","190","117010","0.0-190.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","191","117513","0.0-191.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","192","118366","0.0-192.0","","","isi","","","",""
+"null","null","html-keyboard-response","193","118869","0.0-193.0","","<div class=""circle set""></div>","set","500","","",""
+"830"," ","html-keyboard-response","194","119701","0.0-194.0","","","go","","850","830","-20"
+"null","null","html-keyboard-response","195","120202","0.0-195.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","196","120705","0.0-196.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 830 ms</p>
+        <p><strong>Error:</strong> -20 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 48%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","197","121707","0.0-197.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","198","122210","0.0-198.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","199","123063","0.0-199.0","","","isi","","","",""
+"null","null","html-keyboard-response","200","123565","0.0-200.0","","<div class=""circle set""></div>","set","500","","",""
+"888"," ","html-keyboard-response","201","124455","0.0-201.0","","","go","","850","888","38"
+"null","null","html-keyboard-response","202","124957","0.0-202.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","203","125460","0.0-203.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 888 ms</p>
+        <p><strong>Error:</strong> +38 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 53.800000000000004%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","204","126464","0.0-204.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","205","126966","0.0-205.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","206","127459","0.0-206.0","","","isi","","","",""
+"null","null","html-keyboard-response","207","127962","0.0-207.0","","<div class=""circle set""></div>","set","500","","",""
+"493"," ","html-keyboard-response","208","128456","0.0-208.0","","","go","","490","493","3"
+"null","null","html-keyboard-response","209","128958","0.0-209.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","210","129461","0.0-210.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 490 ms</p>
+        <p><strong>Interval you reported:</strong> 493 ms</p>
+        <p><strong>Error:</strong> +3 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 50.3%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","211","130463","0.0-211.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","212","130966","0.0-212.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","213","131519","0.0-213.0","","","isi","","","",""
+"null","null","html-keyboard-response","214","132022","0.0-214.0","","<div class=""circle set""></div>","set","500","","",""
+"482"," ","html-keyboard-response","215","132505","0.0-215.0","","","go","","550","482","-68"
+"null","null","html-keyboard-response","216","133007","0.0-216.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","217","133510","0.0-217.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 482 ms</p>
+        <p><strong>Error:</strong> -68 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43.2%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","218","134514","0.0-218.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","219","135016","0.0-219.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","220","135629","0.0-220.0","","","isi","","","",""
+"null","null","html-keyboard-response","221","136131","0.0-221.0","","<div class=""circle set""></div>","set","500","","",""
+"703"," ","html-keyboard-response","222","136835","0.0-222.0","","","go","","610","703","93"
+"null","null","html-keyboard-response","223","137337","0.0-223.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","224","137840","0.0-224.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 703 ms</p>
+        <p><strong>Error:</strong> +93 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 59.3%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","225","138841","0.0-225.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","226","139344","0.0-226.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","227","139897","0.0-227.0","","","isi","","","",""
+"null","null","html-keyboard-response","228","140400","0.0-228.0","","<div class=""circle set""></div>","set","500","","",""
+"478"," ","html-keyboard-response","229","140879","0.0-229.0","","","go","","550","478","-72"
+"null","null","html-keyboard-response","230","141381","0.0-230.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","231","141885","0.0-231.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 478 ms</p>
+        <p><strong>Error:</strong> -72 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 42.8%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","232","142888","0.0-232.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","233","143391","0.0-233.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","234","144123","0.0-234.0","","","isi","","","",""
+"null","null","html-keyboard-response","235","144626","0.0-235.0","","<div class=""circle set""></div>","set","500","","",""
+"771"," ","html-keyboard-response","236","145398","0.0-236.0","","","go","","730","771","41"
+"null","null","html-keyboard-response","237","145900","0.0-237.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","238","146402","0.0-238.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 730 ms</p>
+        <p><strong>Interval you reported:</strong> 771 ms</p>
+        <p><strong>Error:</strong> +41 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 54.1%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","239","147405","0.0-239.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","240","147908","0.0-240.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","241","148461","0.0-241.0","","","isi","","","",""
+"null","null","html-keyboard-response","242","148963","0.0-242.0","","<div class=""circle set""></div>","set","500","","",""
+"560"," ","html-keyboard-response","243","149524","0.0-243.0","","","go","","550","560","10"
+"null","null","html-keyboard-response","244","150026","0.0-244.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","245","150530","0.0-245.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 560 ms</p>
+        <p><strong>Error:</strong> +10 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 51%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","246","151532","0.0-246.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","247","152035","0.0-247.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","248","152889","0.0-248.0","","","isi","","","",""
+"null","null","html-keyboard-response","249","153391","0.0-249.0","","<div class=""circle set""></div>","set","500","","",""
+"687"," ","html-keyboard-response","250","154080","0.0-250.0","","","go","","850","687","-163"
+"null","null","html-keyboard-response","251","154582","0.0-251.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","252","155085","0.0-252.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 687 ms</p>
+        <p><strong>Error:</strong> -163 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 33.7%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","253","156087","0.0-253.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","254","156590","0.0-254.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","255","157142","0.0-255.0","","","isi","","","",""
+"null","null","html-keyboard-response","256","157645","0.0-256.0","","<div class=""circle set""></div>","set","500","","",""
+"545"," ","html-keyboard-response","257","158191","0.0-257.0","","","go","","550","545","-5"
+"null","null","html-keyboard-response","258","158693","0.0-258.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","259","159196","0.0-259.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 545 ms</p>
+        <p><strong>Error:</strong> -5 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 49.5%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","260","160199","0.0-260.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","261","160702","0.0-261.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","262","161556","0.0-262.0","","","isi","","","",""
+"null","null","html-keyboard-response","263","162058","0.0-263.0","","<div class=""circle set""></div>","set","500","","",""
+"821"," ","html-keyboard-response","264","162880","0.0-264.0","","","go","","850","821","-29"
+"null","null","html-keyboard-response","265","163382","0.0-265.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","266","163886","0.0-266.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 821 ms</p>
+        <p><strong>Error:</strong> -29 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 47.099999999999994%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","267","164889","0.0-267.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","268","165391","0.0-268.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","269","166003","0.0-269.0","","","isi","","","",""
+"null","null","html-keyboard-response","270","166506","0.0-270.0","","<div class=""circle set""></div>","set","500","","",""
+"756"," ","html-keyboard-response","271","167263","0.0-271.0","","","go","","610","756","146"
+"null","null","html-keyboard-response","272","167765","0.0-272.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","273","168268","0.0-273.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 756 ms</p>
+        <p><strong>Error:</strong> +146 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 64.60000000000001%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","274","169271","0.0-274.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","275","169774","0.0-275.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","276","170566","0.0-276.0","","","isi","","","",""
+"null","null","html-keyboard-response","277","171069","0.0-277.0","","<div class=""circle set""></div>","set","500","","",""
+"811"," ","html-keyboard-response","278","171881","0.0-278.0","","","go","","790","811","21"
+"null","null","html-keyboard-response","279","172383","0.0-279.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","280","172886","0.0-280.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 811 ms</p>
+        <p><strong>Error:</strong> +21 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 52.1%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","281","173889","0.0-281.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","282","174392","0.0-282.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","283","175005","0.0-283.0","","","isi","","","",""
+"null","null","html-keyboard-response","284","175508","0.0-284.0","","<div class=""circle set""></div>","set","500","","",""
+"549"," ","html-keyboard-response","285","176059","0.0-285.0","","","go","","610","549","-61"
+"null","null","html-keyboard-response","286","176561","0.0-286.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","287","177063","0.0-287.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 549 ms</p>
+        <p><strong>Error:</strong> -61 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43.9%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","288","178065","0.0-288.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","289","178567","0.0-289.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","290","179240","0.0-290.0","","","isi","","","",""
+"null","null","html-keyboard-response","291","179744","0.0-291.0","","<div class=""circle set""></div>","set","500","","",""
+"562"," ","html-keyboard-response","292","180307","0.0-292.0","","","go","","670","562","-108"
+"null","null","html-keyboard-response","293","180809","0.0-293.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","294","181312","0.0-294.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 670 ms</p>
+        <p><strong>Interval you reported:</strong> 562 ms</p>
+        <p><strong>Error:</strong> -108 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 39.2%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","295","182316","0.0-295.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","296","182819","0.0-296.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","297","183552","0.0-297.0","","","isi","","","",""
+"null","null","html-keyboard-response","298","184055","0.0-298.0","","<div class=""circle set""></div>","set","500","","",""
+"849"," ","html-keyboard-response","299","184904","0.0-299.0","","","go","","730","849","119"
+"null","null","html-keyboard-response","300","185406","0.0-300.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","301","185910","0.0-301.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 730 ms</p>
+        <p><strong>Interval you reported:</strong> 849 ms</p>
+        <p><strong>Error:</strong> +119 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 61.9%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","302","186912","0.0-302.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","303","187415","0.0-303.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","304","187968","0.0-304.0","","","isi","","","",""
+"null","null","html-keyboard-response","305","188470","0.0-305.0","","<div class=""circle set""></div>","set","500","","",""
+"479"," ","html-keyboard-response","306","188950","0.0-306.0","","","go","","550","479","-71"
+"null","null","html-keyboard-response","307","189452","0.0-307.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","308","189955","0.0-308.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 479 ms</p>
+        <p><strong>Error:</strong> -71 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 42.9%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","309","190959","0.0-309.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","310","191461","0.0-310.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","311","192014","0.0-311.0","","","isi","","","",""
+"null","null","html-keyboard-response","312","192517","0.0-312.0","","<div class=""circle set""></div>","set","500","","",""
+"431"," ","html-keyboard-response","313","192950","0.0-313.0","","","go","","550","431","-119"
+"null","null","html-keyboard-response","314","193451","0.0-314.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","315","193955","0.0-315.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 431 ms</p>
+        <p><strong>Error:</strong> -119 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 38.1%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","316","194957","0.0-316.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","317","195460","0.0-317.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","318","196313","0.0-318.0","","","isi","","","",""
+"null","null","html-keyboard-response","319","196816","0.0-319.0","","<div class=""circle set""></div>","set","500","","",""
+"783"," ","html-keyboard-response","320","197600","0.0-320.0","","","go","","850","783","-67"
+"null","null","html-keyboard-response","321","198102","0.0-321.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","322","198605","0.0-322.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 850 ms</p>
+        <p><strong>Interval you reported:</strong> 783 ms</p>
+        <p><strong>Error:</strong> -67 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43.3%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","323","199607","0.0-323.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","324","200108","0.0-324.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","325","200780","0.0-325.0","","","isi","","","",""
+"null","null","html-keyboard-response","326","201282","0.0-326.0","","<div class=""circle set""></div>","set","500","","",""
+"681"," ","html-keyboard-response","327","201964","0.0-327.0","","","go","","670","681","11"
+"null","null","html-keyboard-response","328","202466","0.0-328.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","329","202970","0.0-329.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 670 ms</p>
+        <p><strong>Interval you reported:</strong> 681 ms</p>
+        <p><strong>Error:</strong> +11 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 51.1%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","330","203973","0.0-330.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","331","204476","0.0-331.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","332","204968","0.0-332.0","","","isi","","","",""
+"null","null","html-keyboard-response","333","205472","0.0-333.0","","<div class=""circle set""></div>","set","500","","",""
+"432"," ","html-keyboard-response","334","205904","0.0-334.0","","","go","","490","432","-58"
+"null","null","html-keyboard-response","335","206407","0.0-335.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","336","206910","0.0-336.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 490 ms</p>
+        <p><strong>Interval you reported:</strong> 432 ms</p>
+        <p><strong>Error:</strong> -58 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 44.2%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","337","207912","0.0-337.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","338","208416","0.0-338.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","339","209209","0.0-339.0","","","isi","","","",""
+"null","null","html-keyboard-response","340","209711","0.0-340.0","","<div class=""circle set""></div>","set","500","","",""
+"904"," ","html-keyboard-response","341","210616","0.0-341.0","","","go","","790","904","114"
+"null","null","html-keyboard-response","342","211118","0.0-342.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","343","211621","0.0-343.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 904 ms</p>
+        <p><strong>Error:</strong> +114 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 61.4%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","344","212623","0.0-344.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","345","213126","0.0-345.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","346","213738","0.0-346.0","","","isi","","","",""
+"null","null","html-keyboard-response","347","214241","0.0-347.0","","<div class=""circle set""></div>","set","500","","",""
+"472"," ","html-keyboard-response","348","214713","0.0-348.0","","","go","","610","472","-138"
+"null","null","html-keyboard-response","349","215215","0.0-349.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","350","215719","0.0-350.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 472 ms</p>
+        <p><strong>Error:</strong> -138 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 36.199999999999996%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","351","216722","0.0-351.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","352","217224","0.0-352.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","353","217957","0.0-353.0","","","isi","","","",""
+"null","null","html-keyboard-response","354","218459","0.0-354.0","","<div class=""circle set""></div>","set","500","","",""
+"508"," ","html-keyboard-response","355","218968","0.0-355.0","","","go","","730","508","-222"
+"null","null","html-keyboard-response","356","219470","0.0-356.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","357","219974","0.0-357.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 730 ms</p>
+        <p><strong>Interval you reported:</strong> 508 ms</p>
+        <p><strong>Error:</strong> -222 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 27.800000000000004%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","358","220977","0.0-358.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","359","221479","0.0-359.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","360","222212","0.0-360.0","","","isi","","","",""
+"null","null","html-keyboard-response","361","222715","0.0-361.0","","<div class=""circle set""></div>","set","500","","",""
+"661"," ","html-keyboard-response","362","223377","0.0-362.0","","","go","","730","661","-69"
+"null","null","html-keyboard-response","363","223879","0.0-363.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","364","224382","0.0-364.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 730 ms</p>
+        <p><strong>Interval you reported:</strong> 661 ms</p>
+        <p><strong>Error:</strong> -69 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43.1%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","365","225385","0.0-365.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","366","225887","0.0-366.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","367","226500","0.0-367.0","","","isi","","","",""
+"null","null","html-keyboard-response","368","227002","0.0-368.0","","<div class=""circle set""></div>","set","500","","",""
+"626"," ","html-keyboard-response","369","227629","0.0-369.0","","","go","","610","626","16"
+"null","null","html-keyboard-response","370","228131","0.0-370.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","371","228634","0.0-371.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 626 ms</p>
+        <p><strong>Error:</strong> +16 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 51.6%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","372","229636","0.0-372.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","373","230139","0.0-373.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","374","230751","0.0-374.0","","","isi","","","",""
+"null","null","html-keyboard-response","375","231254","0.0-375.0","","<div class=""circle set""></div>","set","500","","",""
+"680"," ","html-keyboard-response","376","231936","0.0-376.0","","","go","","610","680","70"
+"null","null","html-keyboard-response","377","232438","0.0-377.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","378","232940","0.0-378.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 680 ms</p>
+        <p><strong>Error:</strong> +70 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 56.99999999999999%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","379","233944","0.0-379.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","380","234446","0.0-380.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","381","235240","0.0-381.0","","","isi","","","",""
+"null","null","html-keyboard-response","382","235742","0.0-382.0","","<div class=""circle set""></div>","set","500","","",""
+"722"," ","html-keyboard-response","383","236466","0.0-383.0","","","go","","790","722","-68"
+"null","null","html-keyboard-response","384","236967","0.0-384.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","385","237470","0.0-385.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 722 ms</p>
+        <p><strong>Error:</strong> -68 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 43.2%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","386","238473","0.0-386.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","387","238976","0.0-387.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","388","239588","0.0-388.0","","","isi","","","",""
+"null","null","html-keyboard-response","389","240091","0.0-389.0","","<div class=""circle set""></div>","set","500","","",""
+"683"," ","html-keyboard-response","390","240775","0.0-390.0","","","go","","610","683","73"
+"null","null","html-keyboard-response","391","241278","0.0-391.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","392","241780","0.0-392.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 610 ms</p>
+        <p><strong>Interval you reported:</strong> 683 ms</p>
+        <p><strong>Error:</strong> +73 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 57.3%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","393","242782","0.0-393.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","394","243285","0.0-394.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","395","243958","0.0-395.0","","","isi","","","",""
+"null","null","html-keyboard-response","396","244461","0.0-396.0","","<div class=""circle set""></div>","set","500","","",""
+"593"," ","html-keyboard-response","397","245055","0.0-397.0","","","go","","670","593","-77"
+"null","null","html-keyboard-response","398","245557","0.0-398.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","399","246060","0.0-399.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 670 ms</p>
+        <p><strong>Interval you reported:</strong> 593 ms</p>
+        <p><strong>Error:</strong> -77 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 42.3%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","400","247063","0.0-400.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","401","247565","0.0-401.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","402","248358","0.0-402.0","","","isi","","","",""
+"null","null","html-keyboard-response","403","248861","0.0-403.0","","<div class=""circle set""></div>","set","500","","",""
+"887"," ","html-keyboard-response","404","249750","0.0-404.0","","","go","","790","887","97"
+"null","null","html-keyboard-response","405","250251","0.0-405.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","406","250755","0.0-406.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 790 ms</p>
+        <p><strong>Interval you reported:</strong> 887 ms</p>
+        <p><strong>Error:</strong> +97 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 59.699999999999996%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","407","251758","0.0-407.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","408","252261","0.0-408.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","409","252933","0.0-409.0","","","isi","","","",""
+"null","null","html-keyboard-response","410","253436","0.0-410.0","","<div class=""circle set""></div>","set","500","","",""
+"763"," ","html-keyboard-response","411","254200","0.0-411.0","","","go","","670","763","93"
+"null","null","html-keyboard-response","412","254701","0.0-412.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","413","255203","0.0-413.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 670 ms</p>
+        <p><strong>Interval you reported:</strong> 763 ms</p>
+        <p><strong>Error:</strong> +93 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 59.3%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","414","256204","0.0-414.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","415","257935","0.0-415.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","416","258427","0.0-416.0","","","isi","","","",""
+"null","null","html-keyboard-response","417","258930","0.0-417.0","","<div class=""circle set""></div>","set","500","","",""
+"534"," ","html-keyboard-response","418","259465","0.0-418.0","","","go","","490","534","44"
+"null","null","html-keyboard-response","419","259967","0.0-419.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","420","260471","0.0-420.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 490 ms</p>
+        <p><strong>Interval you reported:</strong> 534 ms</p>
+        <p><strong>Error:</strong> +44 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 54.400000000000006%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""
+"null","null","html-keyboard-response","421","261472","0.0-421.0","","<p style=""font-size: 48px;"">+</p>","iti","","","",""
+"null","null","html-keyboard-response","422","261975","0.0-422.0","","<div class=""circle ready""></div>","ready","","","",""
+"null","null","html-keyboard-response","423","262528","0.0-423.0","","","isi","","","",""
+"null","null","html-keyboard-response","424","263031","0.0-424.0","","<div class=""circle set""></div>","set","500","","",""
+"616"," ","html-keyboard-response","425","263649","0.0-425.0","","","go","","550","616","66"
+"null","null","html-keyboard-response","426","264150","0.0-426.0","","<div class=""circle go""></div>","feedback_circle","","","",""
+"null","null","html-keyboard-response","427","264654","0.0-427.0","","
+      <div style=""text-align:center;"">
+        <p><strong>Interval you saw:</strong> 550 ms</p>
+        <p><strong>Interval you reported:</strong> 616 ms</p>
+        <p><strong>Error:</strong> +66 ms</p>
+
+        <div style=""position: relative; width: 80%; height: 40px; margin: 40px auto;"">
+          <div style=""height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;""></div>
+          <div style=""position: absolute; left: 56.599999999999994%; top: -6px; transform: translateX(-50%);"">
+            <div style=""width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;""></div>
+          </div>
+          <div style=""position: absolute; left: 0%; top: 20px; font-size: 12px;"">–500 ms</div>
+          <div style=""position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);"">0</div>
+          <div style=""position: absolute; right: 0%; top: 20px; font-size: 12px;"">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
+    ","feedback_text","","","",""

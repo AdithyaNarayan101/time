@@ -5,7 +5,6 @@
   <title>Ready-Set-Go Task</title>
   <script src="https://unpkg.com/jspsych@7.3.0"></script>
   <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
-  <script src="https://cdn.plot.ly/plotly-2.20.0.min.js"></script>
   <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.0"></script>
   <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.1"></script>
   <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" />
@@ -15,40 +14,27 @@
       height: 100px;
       border-radius: 50%;
       margin: 100px auto;
-      background-color: red;
     }
-    .ready {
-      background-color: blue;
-    }
-    .set {
-      background-color: green;
-    }
-    #plot {
-      width: 600px;
-      height: 400px;
-      margin: 30px auto;
-    }
+    .ready { background-color: red; }
+    .set { background-color: orange; }
+    .go { background-color: green; }
   </style>
 </head>
 <body></body>
 
 <script>
-  const num_trials = 10;
-  const feedbackTrialsCount = 5;
+  const num_trials = 900;
+  const feedbackTrialsCount = 900;
   const jsPsych = initJsPsych();
-  const lower_bound = 200;
-  const upper_bound = 1500;
-
   const timeline = [];
-  let subject_id = '';
 
+  // Subject ID input
   timeline.push({
     type: jsPsychSurveyText,
     questions: [{ prompt: "Please enter your subject ID or name:", name: "subject_id" }],
     button_label: "Start",
     on_finish: function(data) {
-      const subject_id = data.response.Q0;
-      jsPsych.data.addProperties({ "subject_ID": subject_id});
+      jsPsych.data.addProperties({ subject_ID: data.response.Q0 });
     }
   });
 
@@ -58,222 +44,240 @@
     stimulus: `
       <p>Ready-Set-Go Task:</p>
       <ul style="text-align:left; max-width:600px; margin:auto;">
-        <li><strong>Blue circle ("Ready")</strong> appears</li>
-        <li>Then, after a delay, a <strong>green circle ("Set")</strong> appears</li>
-        <li>After "Set" disappears, screen goes blank</li>
-        <li>You must <strong>press SPACE</strong> when you think the same delay has passed</li>
-        <li>After you press, a red circle will appear</li>
-        <li>Then you'll see how close your timing was (only for the first 5 trials).</li>
+        <li>First, a <strong>red circle ("Ready")</strong> appears</li>
+        <li>Then, an <strong>orange circle ("Set")</strong> appears after a delay</li>
+        <li>You must <strong>press SPACE</strong> after an equal delay</li>
+        <li>Then, a <strong>green circle ("Go")</strong> appears</li>
+        <li>You'll get feedback for the first 5 trials.</li>
       </ul>
       <p>Press any key to begin.</p>
     `,
   });
 
-  
-
   function make_ready_set_go_trial(interval_ms, trialIndex) {
-  const set_lower_bound = 500;
-  const set_upper_bound = 500;
-  const N = 5;  // Number of discrete steps you want
-  const setSteps = Array.from({ length: N }, (_, i) =>
-  Math.round(set_lower_bound + i * (set_upper_bound - set_lower_bound) / (N - 1))
-);
-  const setDuration = jsPsych.randomization.sampleWithoutReplacement(setSteps, 1)[0];
+    const setDuration = 500;
 
-  const trialTimeline = [
-    {
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div class="circle ready"></div>',
-      choices: "NO_KEYS",
-      trial_duration: 500,
-      data: { phase: "ready" },
-    },
-    {
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: '',
-      choices: "NO_KEYS",
-      trial_duration: interval_ms,
-      data: { phase: "isi" },
-    },
-    {
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div class="circle set"></div>',
-      choices: "NO_KEYS",
-      trial_duration: setDuration,
-      data: {
-        phase: "set",
-        set_duration: setDuration
-      },
-    },
-    {
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: '',
-      choices: [' '],
-      data: {
-        phase: "go",
-        target_interval: interval_ms,
-      },
-      on_finish: function(data) {
-        data.reproduced_interval = data.rt;
-        data.reproduction_error = data.rt - data.target_interval;
-      },
-    },
-  ];
-  // Always show red circle
-trialTimeline.push({
-  type: jsPsychHtmlKeyboardResponse,
-  stimulus: '<div class="circle"></div>',
-  choices: "NO_KEYS",
-  trial_duration: 500,
-  data: { phase: "feedback_circle" },
-});
-
-if (trialIndex < feedbackTrialsCount) {
-  trialTimeline.push(
-  
+    const trialTimeline = [
       {
         type: jsPsychHtmlKeyboardResponse,
-        stimulus: '<div class="circle"></div>',
+        stimulus: '<div class="circle ready"></div>',
+        choices: "NO_KEYS",
+        trial_duration: 500,
+        data: { phase: "ready" },
+      },
+      {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: '',
+        choices: "NO_KEYS",
+        trial_duration: interval_ms,
+        data: { phase: "isi" },
+      },
+      {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: '<div class="circle set"></div>',
+        choices: "NO_KEYS",
+        trial_duration: setDuration,
+        data: { phase: "set", set_duration: setDuration },
+      },
+      {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: '',
+        choices: [' '],
+        data: { phase: "go", target_interval: interval_ms },
+        on_finish: function(data) {
+          data.reproduced_interval = data.rt;
+          data.reproduction_error = data.rt - data.target_interval;
+        },
+      },
+      {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: '<div class="circle go"></div>',
         choices: "NO_KEYS",
         trial_duration: 500,
         data: { phase: "feedback_circle" },
-      },
-      {
+      }
+    ];
+
+    if (trialIndex < feedbackTrialsCount) {
+      trialTimeline.push(
+        { 
   type: jsPsychHtmlKeyboardResponse,
   stimulus: function() {
     const lastGo = jsPsych.data.get().filter({ phase: 'go' }).last(1).values()[0];
-    const setDur = jsPsych.data.get().filter({ phase: 'set' }).last(1).values()[0].set_duration;
     const target = lastGo.target_interval;
     const reproduced = lastGo.reproduced_interval;
     const error = lastGo.reproduction_error;
+    const current = jsPsych.data.get().filter({ phase: "go" }).count() + 1;
+    // Clamp error to range [-500, +500] for display
+    const clampedError = Math.max(-500, Math.min(500, error));
+    const percent = (clampedError + 500) / 1000 * 100;
+
     return `
-      <p><strong>Set duration:</strong> ${setDur} ms</p>
-      <p><strong>Interval you saw:</strong> ${target} ms</p>
-      <p><strong>Interval you reported:</strong> ${Math.round(reproduced)} ms</p>
-      <p><strong>Error:</strong> ${error > 0 ? '+' : ''}${Math.round(error)} ms</p>
-      <p>Press any key to continue.</p>
+      <div style="text-align:center;">
+        
+        <p style="font-size: 16px; text-align: center;">Trial ${current} of ${num_trials}</p>
+        <p><strong>Error:</strong> ${error > 0 ? '+' : ''}${Math.round(error)} ms</p>
+
+        <div style="position: relative; width: 80%; height: 40px; margin: 40px auto;">
+          <div style="height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;"></div>
+          <div style="position: absolute; left: ${percent}%; top: -6px; transform: translateX(-50%);">
+            <div style="width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;"></div>
+          </div>
+          <div style="position: absolute; left: 0%; top: 20px; font-size: 12px;">–500 ms</div>
+          <div style="position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);">0</div>
+          <div style="position: absolute; right: 0%; top: 20px; font-size: 12px;">+500 ms</div>
+        </div>
+
+        <p>Press any key to continue.</p>
+      </div>
     `;
   },
   data: { phase: "feedback_text" },
-},
-
-      {
+          choices:"NO_KEYS",
+          trial_duration: 500,
+        },
+        {
+          type: jsPsychHtmlKeyboardResponse,
+          stimulus: '<p style="font-size: 48px;">+</p>',
+          choices: "NO_KEYS",
+          trial_duration: 1000,
+          data: { phase: "iti" },
+        }
+      );
+    } else {
+      trialTimeline.push({
         type: jsPsychHtmlKeyboardResponse,
-        stimulus: '<p style="font-size: 48px;">+</p>',
+        stimulus: function() {
+          const current = jsPsych.data.get().filter({ phase: "go" }).count() + 1;
+          return `<p style="font-size: 48px;">+</p>
+                  <p style="font-size: 16px; text-align: center;">Trial ${current} of ${num_trials}</p>`;
+        },
         choices: "NO_KEYS",
         trial_duration: 1000,
         data: { phase: "iti" },
-      }
+      });
+    }
+
+    return trialTimeline;
+  }
+
+  // Define trial structure
+  const trials_per_block = Math.floor(num_trials / 3);
+  const blocks = [
+    // { lower: 494, upper: 847 },
+    { lower: 671, upper: 1023 },
+    { lower: 671, upper: 1023 },
+    { lower: 671, upper: 1023 },
+
+    // { lower: 847, upper: 1200 }
+  ];
+  const randomizedBlocks = jsPsych.randomization.shuffle(blocks);
+  let trialIndex = 0;
+
+  randomizedBlocks.forEach((block, blockIndex) => {
+    if (blockIndex > 0) {
+      timeline.push({
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: `<p><strong>Block change. Press any key to continue.</strong></p>`,
+        choices: "ALL_KEYS",
+        data: { phase: "block_transition" }
+      });
+    }
+
+    const n = 7;
+    const intervals = Array.from({ length: n }, (_, i) =>
+      Math.round((block.lower + (i * (block.upper - block.lower)) / (n - 1)) / 10) * 10
     );
-  } else {
-    trialTimeline.push({
-      type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<p style="font-size: 48px;">+</p>',
-      choices: "NO_KEYS",
-      trial_duration: 1000,
-      data: { phase: "iti" },
-    });
-  }
 
-  return trialTimeline;
-}
+    for (let i = 0; i < trials_per_block; i++) {
+      const interval = jsPsych.randomization.sampleWithReplacement(intervals, 1)[0];
+      timeline.push(...make_ready_set_go_trial(interval, trialIndex));
+      trialIndex++;
+    }
+  });
 
-
-  const n = 10;
-  
-  const intervals = Array.from({ length: n }, (_, i) =>
-    Math.round((lower_bound + (i * (upper_bound - lower_bound)) / (n - 1)) / 10) * 10
-  );
-
-  
-  for (let i = 0; i < num_trials; i++) {
-    const interval = jsPsych.randomization.sampleWithReplacement(intervals, 1)[0];
-    timeline.push(...make_ready_set_go_trial(interval, i));
-  }
-
-  // Final feedback screen with scatter plot
+  // Final feedback
   timeline.push({
     type: jsPsychHtmlKeyboardResponse,
     stimulus: `
       <div style="text-align:center;">
-        <h2>Performance Summary</h2>
-        <div id="plot"></div>
-        <p>Each dot shows your reported interval vs actual interval per trial.</p>
-        <p>Press any key to continue.</p>
+        <h2>End of Task</h2>
+        <p>Press any key to download your data.</p>
       </div>
     `,
-    choices: "ALL_KEYS",
-    on_load: function() {
-      const go_trials = jsPsych.data.get().filter({ phase: "go" }).values();
-const set_durations = jsPsych.data.get().filter({ phase: "set" }).values().map(t => t.set_duration);
-
-// Group trials by set duration
-const uniqueDurations = [...new Set(set_durations)].sort((a, b) => a - b);
-
-const traces = uniqueDurations.map(dur => {
-  const indices = set_durations
-    .map((d, i) => d === dur ? i : -1)
-    .filter(i => i !== -1);
-
-  return {
-    x: indices.map(i => go_trials[i].target_interval),
-    y: indices.map(i => go_trials[i].reproduced_interval),
-    mode: "markers",
-    type: "scatter",
-    name: `${dur} ms`,
-    marker: {
-      size: 10
-    }
-  };
-});
-
-const layout = {
-  title: 'Reported vs Actual Interval (Colored by Set Duration)',
-  xaxis: { title: "Actual Interval (ms)" },
-  yaxis: { title: "Reported Interval (ms)" },
-  margin: { t: 50, b: 50 },
-  hovermode: "closest",
-};
-
-Plotly.newPlot("plot", traces, layout, { responsive: true });
-
-
-
-    },
+    choices: "ALL_KEYS"
   });
 
-  // Data saving trial
+  // Download CSV
   timeline.push({
     type: jsPsychHtmlButtonResponse,
     stimulus: '<p>Click below to download your data as a CSV file.</p>',
     choices: ['Download CSV'],
     on_finish: function() {
-  const csv = jsPsych.data.get().csv();
-
-  // Get date in YYYYMMDD format
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = String(now.getMonth() + 1).padStart(2, '0');
-  const day = String(now.getDate()).padStart(2, '0');
-  const dateStr = `${year}${month}${day}`; // e.g., 20250716
-
-  // Random 6-digit ID
-  const randID = Math.floor(Math.random() * 1e6).toString().padStart(6, '0');
-
-  const filename = `readysetgo_${dateStr}_${randID}.csv`;
-
-  const blob = new Blob([csv], { type: 'text/csv' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = filename;
-  a.click();
-  URL.revokeObjectURL(url);
-}
-
-
+      const csv = jsPsych.data.get().csv();
+      const now = new Date();
+      const filename = `readysetgo_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${Math.floor(Math.random()*1e6).toString().padStart(6,'0')}.csv`;
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
   });
 
   jsPsych.run(timeline);
+
+  // ===== Add Stop & Save Button =====
+  window.onload = () => {
+  const stopButton = document.createElement('button');
+  stopButton.innerHTML = '🛑 Stop and Save';
+  stopButton.style.position = 'fixed';
+  stopButton.style.bottom = '20px';
+  stopButton.style.right = '20px';
+  stopButton.style.padding = '10px 16px';
+  stopButton.style.fontSize = '16px';
+  stopButton.style.backgroundColor = '#d9534f';
+  stopButton.style.color = 'white';
+  stopButton.style.border = 'none';
+  stopButton.style.borderRadius = '5px';
+  stopButton.style.zIndex = '1000';
+  stopButton.style.cursor = 'pointer';
+
+  stopButton.addEventListener('click', () => {
+    if (confirm("Stop the experiment and download the data collected so far?")) {
+      const csv = jsPsych.data.get().csv();
+      const now = new Date();
+      const filename = `readysetgo_partial_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${Math.floor(Math.random()*1e6).toString().padStart(6,'0')}.csv`;
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+      jsPsych.endExperiment("Experiment stopped early.");
+    }
+  });
+
+  document.body.appendChild(stopButton);
+};
+
+  stopButton.addEventListener('click', () => {
+    if (confirm("Stop the experiment and download the data collected so far?")) {
+      const csv = jsPsych.data.get().csv();
+      const now = new Date();
+      const filename = `readysetgo_partial_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${Math.floor(Math.random()*1e6).toString().padStart(6,'0')}.csv`;
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+      jsPsych.endExperiment("Experiment stopped early.");
+    }
+  });
 </script>
 </html>
