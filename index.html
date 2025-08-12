@@ -54,20 +54,36 @@
 
   // Instructions
   timeline.push({
-    type: jsPsychHtmlKeyboardResponse,
-    stimulus: `
-      <p>Ready-Set-Go Task:</p>
-      <ul style="text-align:left; max-width:600px; margin:auto;">
-        <li><strong>Blue circle ("Ready")</strong> appears</li>
-        <li>Then, after a delay, a <strong>green circle ("Set")</strong> appears</li>
-        <li>After "Set" disappears, screen goes blank</li>
-        <li>You must <strong>press SPACE</strong> when you think the same delay has passed</li>
-        <li>After you press, a red circle will appear</li>
-        <li>Then you'll see how close your timing was (only for the first 5 trials).</li>
-      </ul>
-      <p>Press any key to begin.</p>
-    `,
-  });
+  type: jsPsychHtmlKeyboardResponse,
+  trial_duration: 2000,
+  stimulus: `
+    <p>Ready-Set-Go Task:</p>
+    <ul style="text-align:left; max-width:600px; margin:auto;">
+      <li><strong>Blue circle ("Ready")</strong> appears</li>
+      <li>Then, after a delay, a <strong>green circle ("Set")</strong> appears</li>
+      <li>After "Set" disappears, screen goes blank</li>
+      <li>You must <strong>press SPACE or tap the screen</strong> when you think the same delay has passed</li>
+      <li>After you press, a red circle will appear</li>
+      <li>Then you'll see how close your timing was (only for the first 5 trials).</li>
+    </ul>
+    <p>Press any key or tap anywhere to begin.</p>
+  `,
+  choices: "NO_KEYS",
+  response_ends_trial: true,
+  on_start: () => {
+    // Add a one-time touch listener that advances trial on tap
+    function onTouch() {
+      jsPsych.finishTrial();
+      document.removeEventListener('touchstart', onTouch);
+    }
+    document.addEventListener('touchstart', onTouch);
+  },
+  on_finish: () => {
+    // Clean up touch listener if trial ended by key press
+    document.removeEventListener('touchstart', () => {});
+  }
+});
+
 
   
 
