@@ -5,6 +5,7 @@
   <title>Ready-Set-Go Task</title>
   <script src="https://unpkg.com/jspsych@7.3.0"></script>
   <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@1.1.1"></script>
+  <script src="https://cdn.plot.ly/plotly-2.20.0.min.js"></script>
   <script src="https://unpkg.com/@jspsych/plugin-survey-text@1.1.0"></script>
   <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.1"></script>
   <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" />
@@ -23,15 +24,15 @@
 <body></body>
 
 <script>
-  const num_trials = 900;
-  const feedbackTrialsCount = 900;
+  const num_trials = 300;
+  const feedbackTrialsCount = 300;
   const jsPsych = initJsPsych();
   const timeline = [];
 
   // Subject ID input
   timeline.push({
     type: jsPsychSurveyText,
-    questions: [{ prompt: "Please enter your subject ID or name:", name: "subject_id" }],
+    questions: [{ prompt: "Please enter your subjectsss ID or name:", name: "subject_id" }],
     button_label: "Start",
     on_finish: function(data) {
       jsPsych.data.addProperties({ subject_ID: data.response.Q0 });
@@ -164,9 +165,9 @@
   // Define trial structure
   const trials_per_block = Math.floor(num_trials / 3);
   const blocks = [
-    { lower: 500, upper: 500 },
-    { lower: 500, upper: 500 },
-    { lower: 500, upper: 500 },
+    { lower: 500, upper: 1000 },
+    { lower: 750, upper: 1250 },
+    { lower: 1000, upper: 1500 },
     // { lower: 847, upper: 1200 },
 
     // { lower: 671, upper: 1023 }
@@ -184,7 +185,7 @@
       });
     }
 
-    const n = 7;
+    const n = 5;
     const intervals = Array.from({ length: n }, (_, i) =>
       Math.round((block.lower + (i * (block.upper - block.lower)) / (n - 1)) / 10) * 10
     );
@@ -195,6 +196,86 @@
       trialIndex++;
     }
   });
+
+  // ===== Final feedback screen: Actual vs Reported Interval =====
+  const feedback_screen = {
+  type: jsPsychHtmlKeyboardResponse,
+  stimulus: `
+    <div style="text-align:center;">
+      <h2>Performance Summary</h2>
+      <div id="plot" style="width:80%;margin:auto;"></div>
+      <p>Each dot shows your reported interval vs actual interval per trial.</p>
+      <p>The dashed black line shows perfect performance (y = x).</p>
+      <p>Press any key to finish.</p>
+    </div>
+  `,
+  choices: "ALL_KEYS",
+  on_load: function() {
+    const go_trials = jsPsych.data.get().filter({ phase: "go" }).values();
+
+    const actualIntervals = go_trials.map(t => t.target_interval);
+    const reportedIntervals = go_trials.map(t => t.reproduced_interval);
+
+    // Scatter trace for all trials
+    const scatterTrace = {
+      x: actualIntervals,
+      y: reportedIntervals,
+      mode: "markers",
+      type: "scatter",
+      name: "Trials",
+      marker: { size: 8, opacity: 0.7, color: "steelblue" }
+    };
+
+    // Compute mean per actual interval
+    const uniqueActuals = [...new Set(actualIntervals)].sort((a, b) => a - b);
+    const meanTrace = {
+      x: [],
+      y: [],
+      mode: "lines+markers",
+      type: "scatter",
+      name: "Mean per interval",
+      marker: { size: 10, color: "red" },
+      line: { color: "red", width: 2 }
+    };
+
+    uniqueActuals.forEach(interval => {
+      const vals = go_trials
+        .filter(t => t.target_interval === interval)
+        .map(t => t.reproduced_interval);
+      const meanVal = vals.reduce((a, b) => a + b, 0) / vals.length;
+      meanTrace.x.push(interval);
+      meanTrace.y.push(meanVal);
+    });
+
+    // Identity (y = x) line
+    const minX = Math.min(...actualIntervals);
+    const maxX = Math.max(...actualIntervals);
+    const identityLine = {
+      x: [minX, maxX],
+      y: [minX, maxX],
+      mode: "lines",
+      type: "scatter",
+      name: "Perfect performance",
+      line: { dash: "dash", color: "black", width: 2 },
+      hoverinfo: "skip"
+    };
+
+    const layout = {
+      title: 'Reported vs Actual Interval',
+      xaxis: { title: "Actual Interval (ms)" },
+      yaxis: { title: "Reported Interval (ms)" },
+      margin: { t: 50, b: 50 },
+      hovermode: "closest"
+    };
+
+    Plotly.newPlot("plot", [scatterTrace, meanTrace, identityLine], layout, { responsive: true });
+  }
+};
+
+// Add this at the very end of your experiment timeline
+timeline.push(feedback_screen);
+
+
 
   // Final feedback
   timeline.push({
@@ -226,13 +307,12 @@
       URL.revokeObjectURL(url);
     }
   });
-
   jsPsych.run(timeline);
 
-  // ===== Add Stop & Save Button =====
-  window.onload = () => {
+  // ===== Add Stop & Save Button with block-colored feedback plot =====
+window.onload = () => {
   const stopButton = document.createElement('button');
-  stopButton.innerHTML = '🛑 Stop and Save';
+  stopButton.innerHTML = '🛑 Pause and Save';
   stopButton.style.position = 'fixed';
   stopButton.style.bottom = '20px';
   stopButton.style.right = '20px';
@@ -246,7 +326,8 @@
   stopButton.style.cursor = 'pointer';
 
   stopButton.addEventListener('click', () => {
-    if (confirm("Stop the experiment and download the data collected so far?")) {
+    if (confirm("Pause the experiment and download the data collected so far?")) {
+      // Save CSV
       const csv = jsPsych.data.get().csv();
       const now = new Date();
       const filename = `readysetgo_partial_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${Math.floor(Math.random()*1e6).toString().padStart(6,'0')}.csv`;
@@ -257,6 +338,8 @@
       a.download = filename;
       a.click();
       URL.revokeObjectURL(url);
+      
+      
       jsPsych.endExperiment("Experiment stopped early.");
     }
   });
@@ -264,20 +347,23 @@
   document.body.appendChild(stopButton);
 };
 
-  stopButton.addEventListener('click', () => {
-    if (confirm("Stop the experiment and download the data collected so far?")) {
-      const csv = jsPsych.data.get().csv();
-      const now = new Date();
-      const filename = `readysetgo_partial_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${Math.floor(Math.random()*1e6).toString().padStart(6,'0')}.csv`;
-      const blob = new Blob([csv], { type: 'text/csv' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = filename;
-      a.click();
-      URL.revokeObjectURL(url);
-      jsPsych.endExperiment("Experiment stopped early.");
-    }
-  });
+
+
+
+stopButton.addEventListener('click', () => {
+  if (confirm("Stop the experiment and download the data collected so far?")) {
+    const csv = jsPsych.data.get().csv();
+    const now = new Date();
+    const filename = `readysetgo_partial_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${Math.floor(Math.random()*1e6).toString().padStart(6,'0')}.csv`;
+    const blob = new Blob([csv], { type: 'text/csv' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    a.click();
+    URL.revokeObjectURL(url);
+    jsPsych.endExperiment("Experiment stopped early.");
+  }
+});
 </script>
 </html>
