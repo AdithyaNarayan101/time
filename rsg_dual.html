@@ -10,6 +10,25 @@
   <script src="https://unpkg.com/@jspsych/plugin-html-button-response@1.1.1"></script>
   <link href="https://unpkg.com/jspsych@7.3.0/css/jspsych.css" rel="stylesheet" />
   <style>
+    .circle-left {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  left: 10%;    /* Adjust for desired horizontal position */
+  top: 100px;   /* Adjust for vertical position */
+}
+
+.circle-right {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  right: 10%;   /* Adjust for desired horizontal position */
+  top: 100px;   /* Adjust for vertical position */
+}
     .circle {
       width: 100px;
       height: 100px;
@@ -34,7 +53,7 @@
 
 <script>
   const num_trials = 300;
-  const feedbackTrialsCount = 5;
+  const feedbackTrialsCount = 300;
   const jsPsych = initJsPsych();
   const lower_bound = 200;
   const upper_bound = 1500;
@@ -71,22 +90,35 @@
 
   
   function make_ready_set_go_trial(trialIndex) {
-  // Randomly assign trial type: left (A key) or right (L key)
-  const trialType = jsPsych.randomization.sampleWithoutReplacement(['left', 'right'], 1)[0];
-  const response_key = trialType === 'left' ? 'a' : 'l';
-  const ready_color = trialType === 'left' ? 'blue' : 'orange';
-  const ready_letter = trialType === 'left' ? 'A' : 'L';
+  // Randomly assign trial type: left (A key) or right (K key)
+const trialType = jsPsych.randomization.sampleWithoutReplacement(['left', 'right'], 1)[0];
+const response_key = trialType === 'left' ? 'a' : 'k';
+const ready_color = trialType === 'left' ? 'blue' : 'orange';
+const ready_letter = trialType === 'left' ? 'A' : 'K';
 
-  // Assign bounds based on trial type
-  const interval_bounds = trialType === 'left'
-    ? { lower: 100, upper: 300 }
-    : { lower: 800, upper: 1600 };
+// Define bounds for each type
+const bounds_left = { lower: 200, upper: 400 };
+const bounds_right = { lower: 1000, upper: 1200 };
 
-  const n = 5; // Number of discrete intervals
-  const intervalSteps = Array.from({ length: n }, (_, i) =>
-    Math.round(interval_bounds.lower + i * (interval_bounds.upper - interval_bounds.lower) / (n - 1))
-  );
-  const interval_ms = jsPsych.randomization.sampleWithoutReplacement(intervalSteps, 1)[0];
+// Decide if this trial is a "swap" trial (20% chance)
+const swap_distribution = Math.random() < 0.2;  // true on 20% of trials
+
+// Pick bounds based on trial type + swap
+let interval_bounds;
+if (trialType === 'left') {
+  interval_bounds = swap_distribution ? bounds_right : bounds_left;
+} else {
+  interval_bounds = swap_distribution ? bounds_left : bounds_right;
+}
+
+// Create discrete steps
+const n = 5;
+const intervalSteps = Array.from({ length: n }, (_, i) =>
+  Math.round(interval_bounds.lower + i * (interval_bounds.upper - interval_bounds.lower) / (n - 1))
+);
+
+// Pick a random interval from the chosen steps
+const interval_ms = jsPsych.randomization.sampleWithoutReplacement(intervalSteps, 1)[0];
 
   const set_lower_bound = 200;
   const set_upper_bound = 200;
@@ -100,7 +132,21 @@
   const trialTimeline = [
     {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: `<div class="circle" style="background-color:${ready_color}; color:white; font-size:48px; line-height:100px; text-align:center;">${ready_letter}</div>`,
+      stimulus: `<div class="circle" 
+    style="
+      background-color:${ready_color};
+      color:white;
+      font-size:48px;
+      line-height:100px;
+      text-align:center;
+      position:absolute;
+      ${trialType === 'left' ? 'left:30%;' : 'right:30%;'}
+      top:100px;
+    ">
+    ${ready_letter}
+  </div>`,
+
+      // stimulus: `<div class="circle" style="background-color:${ready_color}; color:white; font-size:48px; line-height:100px; text-align:center;">${ready_letter}</div>`,
       choices: "NO_KEYS",
       trial_duration: 500,
       data: { phase: "ready", ready_type: trialType, response_key: response_key },
@@ -114,8 +160,15 @@
     },
     {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div class="circle set"></div>',
-      choices: "NO_KEYS",
+      stimulus: `<div class="circle set" 
+    style="
+      background-color:green;
+      position:absolute;
+      ${trialType === 'left' ? 'left:30%;' : 'right:30%;'}
+      top:100px;
+    ">
+  </div>`,
+        choices: "NO_KEYS",
       trial_duration: 500,
       data: { phase: "set_on_1" }
     },
@@ -131,15 +184,22 @@
     // },
     {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div class="circle set"></div>',
-      choices: "NO_KEYS",
+      stimulus: `<div class="circle set" 
+    style="
+      background-color:green;
+      position:absolute;
+      ${trialType === 'left' ? 'left:30%;' : 'right:30%;'}
+      top:100px;
+    ">
+  </div>`,
+        choices: "NO_KEYS",
       trial_duration: 0,
       data: { phase: "set_on_2" }
     },
     {
       type: jsPsychHtmlKeyboardResponse,
       stimulus: '',
-      choices: [response_key],
+      choices: ['a','k'],
       data: {
         phase: "go",
         target_interval: interval_ms,
@@ -155,42 +215,60 @@
     },
     {
       type: jsPsychHtmlKeyboardResponse,
-      stimulus: '<div class="circle"></div>',
+      stimulus: `<div class="circle" 
+    style="
+      background-color:red;
+      position:absolute;
+      ${trialType === 'left' ? 'left:30%;' : 'right:30%;'}
+      top:100px;
+    ">
+  </div>`,
+
       choices: "NO_KEYS",
       trial_duration: 500,
       data: { phase: "feedback_circle" },
     }
   ];
 
-  if (trialIndex < feedbackTrialsCount) {
+  if (1 < 2) {
     trialTimeline.push(
-      {
-        type: jsPsychHtmlKeyboardResponse,
-        stimulus: '<div class="circle"></div>',
-        choices: "NO_KEYS",
-        trial_duration: 500,
-        data: { phase: "feedback_circle" },
-      },
+     
       {
         type: jsPsychHtmlKeyboardResponse,
         stimulus: function() {
           const lastGo = jsPsych.data.get().filter({ phase: 'go' }).last(1).values()[0];
-          const lastSetGap = jsPsych.data.get().filter({ phase: 'set_gap' }).last(1).values()[0];
-
+          const current = jsPsych.data.get().filter({ phase: "go" }).count() ;
           const target = lastGo.target_interval;
           const reproduced = lastGo.reproduced_interval;
           const error = lastGo.reproduction_error;
-          const setDur = lastSetGap.set_duration;
+          const key_result = lastGo.correct_key
+          // Clamp error to range [-500, +500] for display
+    const clampedError = Math.max(-500, Math.min(500, error));
+    const percent = (clampedError + 500) / 1000 * 100;
 
-          return `
-            <p><strong>Set duration:</strong> ${setDur} ms</p>
-            <p><strong>Interval you saw:</strong> ${target} ms</p>
-            <p><strong>Interval you reported:</strong> ${Math.round(reproduced)} ms</p>
-            <p><strong>Error:</strong> ${error > 0 ? '+' : ''}${Math.round(error)} ms</p>
-            <p>Press any key to continue.</p>
-          `;
+    return `
+      <div style="text-align:center;">
+        <p style="font-size: 16px; text-align: center;">Trial ${current} of ${num_trials}</p>
+        <p><strong>Error:</strong> ${error > 0 ? '+' : ''}${Math.round(error)} ms</p>
+
+        <div style="position: relative; width: 80%; height: 40px; margin: 40px auto;">
+          <div style="height: 8px; background: linear-gradient(to right, #3498db, #ccc, #e74c3c); border-radius: 4px;"></div>
+          <div style="position: absolute; left: ${percent}%; top: -6px; transform: translateX(-50%);">
+            <div style="width: 14px; height: 14px; background: black; border-radius: 50%; border: 2px solid white;"></div>
+          </div>
+          <div style="position: absolute; left: 0%; top: 20px; font-size: 12px;">–500 ms</div>
+          <div style="position: absolute; left: 50%; top: 20px; font-size: 12px; transform: translateX(-50%);">0</div>
+          <div style="position: absolute; right: 0%; top: 20px; font-size: 12px;">+500 ms</div>
+        </div>
+        <p>Key: <strong>${key_result}</strong></p>
+        <p>Press any key to continue.</p>
+      </div>
+    `;
+        
         },
         data: { phase: "feedback_text" },
+        choices:['NO_KEYS'],
+        trial_duration:500,
       },
       {
         type: jsPsychHtmlKeyboardResponse,
