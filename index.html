@@ -34,11 +34,11 @@
 
 <script>
   const num_trials = 300;
-  const feedbackTrialsCount = 100;
+  const feedbackTrialsCount = 300;
   const jsPsych = initJsPsych();
-  const lower_bound = 400;
+  const lower_bound = 900;
   const upper_bound = 1500;
-  const n = 10;
+  const n = 8;
   const timeline = [];
   let subject_id = '';
 
@@ -183,8 +183,8 @@
       },
       on_finish: (data) => {
         // Clean up overlay just in case
-        const overlays = document.querySelectorAll('button[style*="position: fixed"]');
-        overlays.forEach(o => o.remove());
+        // const overlays = document.querySelectorAll('button[style*="position: fixed"]');
+        // overlays.forEach(o => o.remove());
 
         data.reproduced_interval = data.rt;
         data.reproduction_error = data.rt - data.target_interval;
@@ -218,7 +218,7 @@ if (trialIndex < feedbackTrialsCount) {
     const target = lastGo.target_interval;
     const reproduced = lastGo.reproduced_interval;
     const error = lastGo.reproduction_error;
-    const current = jsPsych.data.get().filter({ phase: "go" }).count() + 1;
+    const current = jsPsych.data.get().filter({ phase: "go" }).count();
     // Clamp error to range [-500, +500] for display
     const clampedError = Math.max(-500, Math.min(500, error));
     const percent = (clampedError + 500) / 1000 * 100;
@@ -244,7 +244,7 @@ if (trialIndex < feedbackTrialsCount) {
     `;
   },
   choices:"NO_KEYS",
-  trial_duration: 200,
+  trial_duration: 500,
   data: { phase: "feedback_text", 
   
           },
@@ -403,7 +403,7 @@ window.onload = () => {
       URL.revokeObjectURL(url);
       
       
-      jsPsych.endExperiment("Experiment stopped early.");
+      // jsPsych.endExperiment("Experiment stopped early.");
     }
   });
 
@@ -425,7 +425,7 @@ stopButton.addEventListener('click', () => {
     a.download = filename;
     a.click();
     URL.revokeObjectURL(url);
-    jsPsych.endExperiment("Experiment stopped early.");
+    // jsPsych.endExperiment("Experiment stopped early.");
   }
 });
 </script>
